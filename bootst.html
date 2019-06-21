@@ -1,0 +1,287 @@
+   
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="bootst.css" type="text/css">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+
+
+  <!-- jQuery library -->
+  
+  
+ 
+ 
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+.navbar-1 {
+  overflow: hidden;
+  background-color: #26004d;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.navbar-1 a {
+  float: left;
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.dropdown-1{
+  float: left;
+  overflow: hidden;
+  /* border-right: 1px; */
+
+}
+
+.dropdown-1 .dropbtn-1 {
+  font-size: 16px;  
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color:inherit ;
+  box-shadow: 0px 0px;
+  font: inherit;
+  margin: 0;
+}
+
+.navbar-1 a:hover, .dropdown-1:hover .dropbtn-1 {
+  background-color:#4d0099;
+}
+
+.dropdown-content-1 {
+  display: none;
+  color:white;
+  position: absolute;
+  background-color:#4d0099;
+  box-shadow: 0px 0px;
+  width: 100%;
+  left: 0;
+  box-shadow: 0px 0px;
+  z-index: 1;
+  border-right: 1px;
+}
+
+.dropdown-content-1 .header {
+  background:#4d0099;
+  padding: 16px;
+  color: white;
+}
+
+.dropdown-1:hover .dropdown-content-1 {
+  display: block;
+}
+
+/* Create three equal columns that floats next to each other */
+.column {
+  float: left;
+  border-right:1px solid #bbb;
+  float: left;
+  width: 33.33%;
+  padding: 10px;
+  background-color: #4d0099;
+  height: 250px;
+}
+
+.column a {
+  float: none;
+  color:white;
+  padding: 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.column a:hover {
+  background-color:#4d0099;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+    height: auto;
+    float: left;
+  border-right:1px solid #bbb;
+  }
+}
+
+.btn {
+  border: 2px solid red;
+  border-radius: 5px;
+  background-color:red;
+  color: white;
+  padding: 14px 28px;
+  font-size: 16px;
+  cursor: pointer;
+}
+.default {
+  border-color: #e7e7e7;
+  background-color: #4d0099;
+  color: white;
+}
+
+.default:hover {
+  background: #e7e7e7;
+}
+.danger{
+  color: white;
+  border-color: red;
+  background-color: red;
+
+}
+
+
+</style>
+</head>
+
+<body style="background-color: rgb(122, 54, 122)">
+  <ul class="nav nav-tabs">
+    <li class="nav-item">
+      <a class="nav-link active" data-toggle="tab" href="#home"style="color:white;background-color:rgb(122, 54, 122)">Looking for a Job</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" data-toggle="tab" href="#menu1"style="color:white;background-color:rgb(122, 54, 122)">Looking for Employee</a>
+    </li>
+   
+  </ul>
+
+  <!-- Tab panes -->
+  <div class="tab-content">
+
+<div id="home" class="navbar-1" >
+
+    <a class="navbar-brand" href="#" ><h4 style="text-shadow: 2px 0px">employ.im</h4></a>
+      <div style="float:right;">
+  <a href="#home">find a job</a>
+  <div class="dropdown-1">
+      <button class="dropbtn-1 ">candidates
+        <!-- <i class="fa fa-caret-down"></i> -->
+      </button>
+      <div class="dropdown-content-1">
+        <!-- <div class="header"> -->
+          <!-- <h2>Mega Menu</h2> -->
+        <!-- </div>    -->
+        <div class="row">
+          <div class="column">
+              <br><br>
+            <h3> Candidates</h3>
+            <p>
+              Start applying instantly
+            </p>
+          </div>
+          <div class="column">
+              <br><br>
+            <h3>get started</h3>
+            <p>job search<br>company search<br>create your cv<br>how it works</p>
+          </div>
+          <div class="column">
+            <br><br>
+            <h3>find a job</h3>
+            <button class="btn default">log in</button><p></p>
+            <button class="btn danger">Register</button>
+          </div>
+        </div>
+      </div>
+    </div> 
+  <a href="#news">employers</a>
+  <a href="#icon"><i class="fas fa-user-circle"></i></a>
+  
+
+  
+  </div>
+</div>
+</div>
+
+
+
+  
+
+
+
+  
+  
+
+
+
+
+<div class="container"  >
+    <div class="row">
+    <div  class="col-md-8" >
+        <!-- <h1 class="d-1 text-center mt-5">Hello</h1> -->
+    </div>
+    <div class="col-md-4">
+        <br><br><br>
+        <!-- <div id="form-all"> -->
+            
+            
+          
+                <!-- <div class="card bg-light"> -->
+                  
+        
+        <form action="/action_page.php">
+          <div class="card p-3 py-4">
+              <h2>Application Form</h2>
+             <div class="form-group">
+            <!-- <label for="email1"></label> -->
+            <input type="email" class="form-control" id="email1" placeholder="Enter Your name" name="fname" required="">
+          </div>
+
+          <div class="form-group">
+            <!-- <label for="email">Email</label> -->
+            <input type="email" class="form-control" id="email" placeholder="Enter Your mail ID" name="email">
+          </div>
+          <div class="form-group">
+            <!-- <label for="email2">Company</label> -->
+            <input type="email2" class="form-control" id="email2" placeholder="Enter Company name" name="fname">
+          </div>
+          <div class="form-group">
+            <!-- <label for="pwd">Job Type</label> -->
+            <input type="password" class="form-control" id="pwd" placeholder="Enter Job Type" name="pswd">
+          </div>
+          
+          <button type="submit" class="btn btn-danger" allign="center">Find Job</button>
+        </div>
+        </form>
+      </div>
+      <!-- </div> -->
+    
+    
+      <!-- </div> -->
+     
+</div>
+
+<!-- </div> -->
+
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+</body>
+</html>
+
